@@ -1,0 +1,305 @@
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "Consolas";
+	src: url(./font/Consolas.ttf) format("truetype");
+}
+
+body {
+	background-color: #000;
+	background-image: url('https://blogdotnetatlanticdotcom.files.wordpress.com/2015/04/difference_soft_hard_bounce.png');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+
+	color: #FF0000;	font-family: consolas;
+}
+
+div#wrapper {
+	width: 100%;
+	max-width: 1700px;
+	margin: auto;
+    background-image: url('https://images.imgur-photobox.com/wp-content/themes/forex2theme-child/assets/logo/grace.png');
+
+}
+
+/*HEADER-CONTAINER-STYLE*/
+
+span#title {
+	color: lime;
+
+	text-shadow: 0 0 10px #000;
+}
+
+span#howitswork {
+	color: lime;
+	text-shadow: 0 0 10px #fff;
+}
+
+span#idcoder {
+	color: #FFAD00;
+	text-shadow: 0 0 5px #000;
+}
+
+span#email-coder {
+	color: #FFAD00;
+	text-shadow: 0 0 5px #000;
+}
+
+/*FORM-CONTAINER-STYLE*/
+
+div#form-container {
+	padding: 10px 0 90px 0;
+	min-height: 400px;
+}
+
+div#form-centered {
+	width: 100%;
+	max-width: 750px;
+	height: 380px;
+	display: block;
+	margin: auto;
+	padding-top: 5px;
+
+	_background: rgba(8, 179, 163, 0.46);
+	border-radius: 10px;
+	_box-shadow: 0 0 11px 0px #06AC9C;
+}
+
+
+textarea#apilist {
+	background: rgba(33, 33, 33, 0.9);
+	padding: 5px;
+	color: #FF0000;	border-radius: 5px;
+	box-shadow: 0 0 11px 0px #03F607;
+	border: 0;
+	margin-bottom: 20px;
+	max-width: 505px;
+	height: 25px;
+	width: 100%;
+	font-size: 11px;
+	resize: none;
+	transition: all 0.4s ease-in;
+}
+
+textarea#apilist:focus {
+	height: 110px;
+	outline: none;
+	box-shadow: 0 0 20px 0px #03F607;
+}
+
+
+
+textarea#empass {
+	background: rgba(0, 0, 0, 0.83);
+	padding: 5px;
+	color: #FF0000;	border-radius: 5px;
+	box-shadow: 0 0 11px 0px #03F607;
+	border: 0;
+	margin-bottom: 20px;
+	max-width: 505px;
+	height: 235px;
+	width: 100%;
+	resize: none;
+	transition: all 1s ease-in;
+}
+
+textarea#empass:focus {
+	outline: none;
+	box-shadow: 0 0 10px 0px #03F607;
+}
+
+#start-button {
+	padding: 5px 10px;
+    color: #fff;    background-image: linear-gradient(#01F702,#018C01);
+    outline: none;
+    border: none;
+    font-family: sans-serif;
+    border-radius: 5px;
+    text-shadow: 0 1px 5px #000;
+    cursor: pointer;
+}
+
+#start-button:hover {
+	opacity: 0.9;
+}
+
+#start-button:active {
+	opacity: 0.6;
+}
+
+#stop-button {
+	padding: 5px 10px;
+	width: 58px;
+    color: #fff;    background-image: linear-gradient(#FF0303,#BB1700);
+    outline: none;
+    border: none;
+    font-family: sans-serif;
+    border-radius: 5px;
+    text-shadow: 0 1px 5px #000;
+    cursor: pointer;
+}
+
+#stop-button:hover {
+	opacity: 0.9;
+}
+
+#stop-button:active {
+	opacity: 0.6;
+}
+
+/*RESULT-CONTAINER-STYLE*/
+
+
+.results {
+	font-size: 12px;
+	text-shadow: 0 0 10px #000;
+}
+
+.results span {
+
+}
+
+span.live_reslt {
+	color: lime;
+}
+
+span.unk_reslt {
+	color: cyan;
+}
+
+span.inv_reslt {
+	color: red;
+}
+
+
+
+.copier {
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+
+.copier:hover {
+	transform: scale(1.2);
+}
+
+
+
+
+div#result-container {
+	border: 0px solid #fff;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	transition: all 1s ease;
+}
+
+div#result-container fieldset {
+	min-height: 25px;
+	max-height: 220px;
+}
+div#result-container #result-live fieldset,
+div#result-container #result-invalid fieldset,
+div#result-container #result-nocard fieldset
+{
+	border: none;
+	overflow-y: auto;
+}
+
+/*Live*/
+
+
+div#result-live {
+    background: black;
+    border-radius: 5px;
+    box-shadow: 0 0 11px 0px #000;
+    position: relative;
+    border: 2px solid #161616;
+    -webkit-box-shadow: 0 0 10px green;
+    -moz-box-shadow: 0 0 10px green;
+    width: 450px;
+    height: 260px;
+    margin: 10px;
+    padding: 20px 0px 0px 7px;
+}
+span#result-live-note {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    background: rgb(32, 32, 32);
+    color: green;
+    padding: 4px;
+    border-radius: 5px;
+    border-top: 1px solid rgb(103, 103, 103);
+    border-left: 1px solid rgb(103, 103, 103);
+    font-size: 12px;
+}
+
+
+
+
+
+/*Invalid*/
+
+div#result-invalid {
+    background: black;
+    border-radius: 5px;
+    box-shadow: 0 0 11px 0px #000;
+    position: relative;
+    border: 2px solid #161616;
+    -webkit-box-shadow: 0 0 10px red;
+    -moz-box-shadow: 0 0 10px red;
+    width: 450px;
+    height: 260px;
+    margin: 10px;
+    padding: 20px 0px 0px 7px;
+}
+span#result-invalid-note {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    background: rgb(32, 32, 32);
+    color: red;
+    padding: 4px;
+    border-radius: 5px;
+    border-top: 1px solid rgb(103, 103, 103);
+    border-left: 1px solid rgb(103, 103, 103);
+    font-size: 12px;
+}
+
+
+/*No-Card*/
+
+div#result-nocard {
+    background: black;
+    border-radius: 5px;
+    box-shadow: 0 0 11px 0px #000;
+    position: relative;
+    border: 2px solid #161616;
+    -webkit-box-shadow: 0 0 10px cyan;
+    -moz-box-shadow: 0 0 10px cyan;
+    width: 450px;
+    height: 260px;
+    margin: 10px;
+    padding: 20px 0px 0px 7px;
+}
+span#result-nocard-note {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    background: rgb(32, 32, 32);
+    color: cyan;
+    padding: 4px;
+    border-radius: 5px;
+    border-top: 1px solid rgb(103, 103, 103);
+    border-left: 1px solid rgb(103, 103, 103);
+    font-size: 12px;
+}
